@@ -4,12 +4,9 @@
 %  ==============================================
 clc; clear vars;
 
-% inputFolder = 'E:\Datasets\3d\myMaize-leaf-stem\myData4\100884';   % 输入文件夹路径
-% outputFolder = 'E:\Datasets\3d\myMaize-leaf-stem\myData4\100884+normal';
-
 basePath = 'E:\Datasets\3d\myMaize-leaf-stem\New\';
 filePath = '1214';
-inputFolder = fullfile(basePath, filePath);   % 输入文件夹路径
+inputFolder = fullfile(basePath, filePath);
 outputFolder = fullfile(basePath, [filePath '+normal']);
 
 % 邻域大小
@@ -68,25 +65,23 @@ for f = 1:length(files)
     fprintf('→ 已保存至 %s\n', outPath);
 end
 
-fprintf('\n✅ 所有文件已处理完成！\n');
+fprintf('\n所有文件已处理完成！\n');
 
 
 %% --- 可视化 ---
-
-% 设置文件路径（请根据实际情况修改）
-filename = fullfile(outputFolder, '02-1_GT_XYZC_nobg.txt');  % 替换为你的实际文件名
+filename = fullfile(outputFolder, '02-1_GT_XYZC_nobg.txt');
 
 % 读取数据：每行 [X Y Z Nx Ny Nz Label]
-data = load(filename);  % 假设文件是纯数值、空格/制表符分隔
+data = load(filename);
 pts   = data(:, 1:3);          % XYZ 坐标
 norms = data(:, 4:6);          % 法向量 Nx Ny Nz
 label = data(:, 7);            % Label (0~4)
 
-% 归一化法向量（可选，但推荐）
+% 归一化法向量
 norms = norms ./ vecnorm(norms, 2, 2);  % 每行归一化为单位向量
 
 % 根据 label 生成颜色（0~4 共5类）
-colors = lines(5);             % 使用 MATLAB 内置 colormap，也可用 jet(5) 等
+colors = lines(5);             % 使用 MATLAB 内置 colormap
 C = colors(label + 1, :);      % label 是 0~4，需 +1 转为 1~5 索引
 
 % 创建图形窗口
