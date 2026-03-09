@@ -8,8 +8,10 @@ The project documents are being compiled and will be uploaded and made public gr
 
 <img width="1764" height="1130" alt="image" src="./images/software-1.png" />
 
-<img width="554" height="331" alt="image" src="./images/software-2.png" />
-
+<p align="center">
+<img width="554" height="331" alt="image" src="./images/software-2.png" /><br>
+系统架构图
+</p>
 
 <img width="865" height="554" alt="image" src="./images/software-3.png" />
 
