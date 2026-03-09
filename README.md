@@ -24,3 +24,8 @@ The project documents are being compiled and will be uploaded and made public gr
 
 ## Reference
 1. https://github.com/syau-miao/Ear-Segmentation
+2. https://github.com/taiya/cloudcontr/tree/master
+3. https://github.com/taiya/kdtree
+4. https://github.com/gpeyre/matlab-toolboxes
+5. https://github.com/rconsolo96/Explore-and-Analyze-Point-Clouds-with-MATLAB
+6. https://github.com/yanx27/Pointnet_Pointnet2_pytorch
