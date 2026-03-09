@@ -20,3 +20,7 @@ The project documents are being compiled and will be uploaded and made public gr
 <img width="865" height="554" alt="image" src="./images/software-5.png" />
 
 <img width="1253" height="761" alt="image" src="./images/software-6.png" />
+
+
+## Reference
+1. https://github.com/syau-miao/Ear-Segmentation
