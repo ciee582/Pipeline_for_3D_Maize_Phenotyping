@@ -5,6 +5,8 @@ The project documents are being compiled and will be uploaded and made public gr
 
 【**Please note**： This software and related methods have been granted Chinese software copyright registration (No. 2025SR1553104) and Chinese invention patent (No. ZL 202511467749.1). Due to the use of publicly available information in some parts of the work, key content is disclosed here. Please be aware that your use must comply with the relevant license terms!】
 
+**Screen recording video demonstrating software operations**
+https://github.com/user-attachments/assets/8e0f623d-4749-4343-b3d7-114484a5ae49
 
 <img width="1764" height="1130" alt="image" src="./images/software-1.png" />
 
